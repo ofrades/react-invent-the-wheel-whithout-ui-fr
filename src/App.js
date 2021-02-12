@@ -3,6 +3,27 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  /**
+   * @param {number} num - Number
+   */
+  const sumNum = (num) => {
+    return num + num;
+  };
+  sumNum('hello'); // oowww
+
+  /**
+   * @typeof {Object} obj
+   * @property {string} hello
+   * @property {string} name
+   * @property {age} age
+   */
+  const obj = {
+    hello: 'world',
+    name: 'miguel',
+    age: 2,
+  };
+  obj.age = 'a';
+
   return (
     <div className="App">
       <header className="App-header">
