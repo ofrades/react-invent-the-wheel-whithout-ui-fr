@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  const incNum = () => {
+    setCount(count + 1);
+  };
+
   /**
    * @param {number} num - Number
    */
-  const sumNum = (num) => {
-    return num + num;
+  const decNum = (num) => {
+    setCount(count - num);
   };
-  sumNum('hello'); // oowww
 
   /**
    * @typeof {Object} obj
@@ -18,19 +23,22 @@ function App() {
    * @property {age} age
    */
   const obj = {
-    hello: 'world',
+    message: 'hello',
     name: 'miguel',
-    age: 2,
+    count: count,
   };
-  obj.age = 'a';
+
+  obj.age = 1;
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {obj.message} {obj.name} {obj.count}
         </p>
+        <button onClick={incNum}>+</button>
+        <button onClick={() => decNum(1)}>-</button>
         <a
           className="App-link"
           href="https://reactjs.org"

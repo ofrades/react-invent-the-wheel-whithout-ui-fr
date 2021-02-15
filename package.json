@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "web-vitals": "^1.0.1",
     "axios": "^0.19.2",
     "formik": "^2.2.6",
     "lodash": "^4.17.11",
@@ -22,6 +21,7 @@
     "react-select": "^3.1.1",
     "react-table": "^7.6.2",
     "styled-components": "^5.1.1",
+    "web-vitals": "^1.0.1",
     "yup": "^0.32.8"
   },
   "devDependencies": {
@@ -29,6 +29,9 @@
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-env": "^7.12.7",
     "@babel/preset-react": "^7.12.7",
+    "@types/react": "^17.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^7.0.0",
@@ -36,7 +39,8 @@
     "eslint-plugin-react": "^7.21.5",
     "husky": "^4.3.4",
     "lint-staged": "^10.5.3",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.5"
   },
   "eslintConfig": {
     "extends": [

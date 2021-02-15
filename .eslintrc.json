@@ -23,6 +23,8 @@
   "parser": "babel-eslint",
   "rules": {
     "react/prop-types": 0,
-    "no-debugger": "warn"
+    "no-debugger": 1,
+    "valid-jsdoc": 0,
+    "require-jsdoc": 0
   }
 }
